@@ -110,16 +110,14 @@
         
       }
       var iFIO=$("#fio");
-    //var reFIO = /^[а-яё]$/;
     var re1FIO = /^[-_a-zA-Zа-яА-Я ]+$/;
-    //if(!reFIO.test(fio)) {
         if(!re1FIO.test(fio))
         {
         var a1 = $('<div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>Warning!</strong> Имя не верное!</div>');
                         $("#cont").append(a1);
         iFIO.css("border-color", "red");
         bValid=false;
-    }//}
+    }
     else
     {
         iFIO.css("border-color","#ccc");
